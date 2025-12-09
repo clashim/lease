@@ -1,7 +1,7 @@
 server:
   port: 8080
 
-spring:
+spring:  
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://192.168.204.100:3306/lease?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2b8
@@ -20,3 +20,9 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+minio:
+  endpoint: http://192.168.204.100:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket-name: lease
